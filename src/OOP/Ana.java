@@ -51,21 +51,28 @@ package OOP;
  * */
 
 
-class BenimSinifim{
-	int x = 5;  // this is not a variable. this is called attribute
-	static int y = 5; // this is static variable
-}
-public class DefinitionsOOP {
+public class Ana {
 
 	public static void main(String[] args) {
-		// we cannot access x directly. However, we can access variable y(bc static variable).
-		System.out.println("Accessing a static vairaible directly from a class "+BenimSinifim.y);
-		//Wrong usage
-		//System.out.println(BenimSinifim.x);
-		// to access x, we need to create an object from BenimSinifim class
-		BenimSinifim xObj = new BenimSinifim();
-		System.out.println("accessing to x from an object "+xObj.x);
 
+		Araba nesne = new Araba();
+		nesne.marka = "Toyota";
+		nesne.modelYili = 2020;
+		nesne.plaka="0202df";
+		nesne.renk = "Beyaz";
+		nesne.yazdir();
+		
+		Araba nesne2 = new Araba();
+		nesne2.marka = "Reanult";
+		nesne2.modelYili = 2021;
+		nesne2.plaka="032şş32";
+		nesne2.renk = "Mavi";
+		nesne2.yazdir();		
+		
+		nesne2.hareketEt();
+		nesne.durdur();
+		
+		System.out.println("Nesne2 nin markası "+nesne2.markaGoster());
 	}
 
 }
