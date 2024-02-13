@@ -26,6 +26,11 @@ package OOP;
  * properties (attributes or fields) and behaviors (methods or functions) that
  * all objects of that class will have.
  * 
+ * Class ClassName{
+ *   // fields, instance variable
+ *   // methods
+ * }
+ * 
  * Key components of of a class: 
  * -Attributes/Fields:These represent the data associated with the class. 
  * They define the characteristics or properties of objects created from the class
@@ -34,18 +39,32 @@ package OOP;
  * -Constructor: This is a special method used for initializing newly created objects. It typically 
  * assigns initial values to the object's attributes.
  * 
- * 
  * What is an OBJECT?
  * An object is an instance of a class. It is a concrete realization of the class blueprint, 
  * with its own unique data and state. When you create an object from a class, 
  * you're essentially creating a specific instance of that class, 
  * with its own distinct set of attribute values.
+ * 
+ * NOT: file name and class name must be same
+ * 
+ * 
  * */
 
+
+class BenimSinifim{
+	int x = 5;  // this is not a variable. this is called attribute
+	static int y = 5; // this is static variable
+}
 public class DefinitionsOOP {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// we cannot access x directly. However, we can access variable y(bc static variable).
+		System.out.println("Accessing a static vairaible directly from a class "+BenimSinifim.y);
+		//Wrong usage
+		//System.out.println(BenimSinifim.x);
+		// to access x, we need to create an object from BenimSinifim class
+		BenimSinifim xObj = new BenimSinifim();
+		System.out.println("accessing to x from an object "+xObj.x);
 
 	}
 
