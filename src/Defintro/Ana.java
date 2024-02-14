@@ -1,4 +1,4 @@
-package OOP;
+package Defintro;
 
 /*
  * OOP: Object-oriented programming (OOP) is a programming paradigm based on the 
@@ -76,6 +76,12 @@ public class Ana {
 		
 		Kisi kisi1 = new Kisi();
 		Kisi kisi2 = new Kisi("Yavuz");
+		Kisi kisi3 = new Kisi("Yavuz","kk",15);
+		System.out.println(kisi3.soyisim);
+		System.out.println(kisi2.isim);
+		System.out.println(kisi1.isim);
+		
+		
 		
 		
 	}
