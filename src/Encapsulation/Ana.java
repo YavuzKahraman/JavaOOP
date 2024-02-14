@@ -17,7 +17,7 @@ public class Ana {
 //		k1.yas = 3;
 		
 		k1.setAd("Ayşema");
-		k1.setSoyAd("Kahraman");
+		k1.setSoyad("Kahraman");
 		k1.setYas(3);
 		k1.yazdir();
 	}
