@@ -55,24 +55,29 @@ public class Ana {
 
 	public static void main(String[] args) {
 
-		Araba nesne = new Araba();
-		nesne.marka = "Toyota";
-		nesne.modelYili = 2020;
-		nesne.plaka="0202df";
-		nesne.renk = "Beyaz";
-		nesne.yazdir();
+//		Araba nesne = new Araba();
+//		nesne.marka = "Toyota";
+//		nesne.modelYili = 2020;
+//		nesne.plaka="0202df";
+//		nesne.renk = "Beyaz";
+//		nesne.yazdir();
+//		
+//		Araba nesne2 = new Araba();
+//		nesne2.marka = "Reanult";
+//		nesne2.modelYili = 2021;
+//		nesne2.plaka="032şş32";
+//		nesne2.renk = "Mavi";
+//		nesne2.yazdir();		
+//		
+//		nesne2.hareketEt();
+//		nesne.durdur();
+//		
+//		System.out.println("Nesne2 nin markası "+nesne2.markaGoster());
 		
-		Araba nesne2 = new Araba();
-		nesne2.marka = "Reanult";
-		nesne2.modelYili = 2021;
-		nesne2.plaka="032şş32";
-		nesne2.renk = "Mavi";
-		nesne2.yazdir();		
+		Kisi kisi1 = new Kisi();
+		Kisi kisi2 = new Kisi("Yavuz");
 		
-		nesne2.hareketEt();
-		nesne.durdur();
 		
-		System.out.println("Nesne2 nin markası "+nesne2.markaGoster());
 	}
 
 }
