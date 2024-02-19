@@ -10,15 +10,11 @@ package Encapsulation;
 public class Ana {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Kisi k1 = new Kisi();
-//		k1.ad ="AH";
-//		k1.soyad ="Kahraman";
-//		k1.yas = 3;
 		
-		k1.setAd("Ayşema");
-		k1.setSoyad("Kahraman");
-		k1.setYas(3);
+		Kisi k1 = new Kisi();
+		k1.ad="Yavuz";
+		k1.soyad = "Kahraman";
+		k1.yas = 35;
 		k1.yazdir();
 	}
 
