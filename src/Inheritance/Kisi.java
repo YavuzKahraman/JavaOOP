@@ -1,9 +1,9 @@
 package Inheritance;
 
 public class Kisi {
-	String ad;
-	String soyad;
-	int yas;
+	private String ad;
+	private String soyad;
+	private int yas;
 	
 	public String getAd() {
 		return ad;
@@ -30,4 +30,10 @@ public class Kisi {
 
 	}
 	
+	
+	public void yazdir() {
+		System.out.println("Ad	: "+getAd());
+		System.out.println("Soyad	: "+getSoyad());
+		System.out.println("Yaş	: "+getYas());
+	}
 }

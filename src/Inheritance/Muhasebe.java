@@ -1,7 +1,7 @@
 package Inheritance;
 
 public class Muhasebe extends Kisi{
-	int maas;
+	private int maas;
 	
 	public int getMaas() {
 		return maas;
@@ -12,9 +12,7 @@ public class Muhasebe extends Kisi{
 	}
 
 	public void yazdir() {
-		System.out.println("Ad	: "+getAd());
-		System.out.println("Soyad	: "+getSoyad());
-		System.out.println("Yaş	: "+getYas());
+		super.yazdir();
 		System.out.println("Maaş	: "+getMaas());
 	}
 }
