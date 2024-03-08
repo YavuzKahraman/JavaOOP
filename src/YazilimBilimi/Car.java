@@ -8,15 +8,25 @@ public class Car {
 	private int doors;
 	
 	
-
+	// parametreli constructor
 	public Car(String color, String model, double engine, int doors) {
 		this.color = color;
 		this.model = model;
 		this.engine = engine;
 		this.doors = doors;
 	}
+	
+	// boş constructor
 	public Car() {
 		
+	}
+	
+	//Bilgileri göster metodu
+	public void showInfos() {
+		System.out.println("Arabanın Rengi: "+this.color);
+		System.out.println("Arabanın model: "+this.model);
+		System.out.println("Arabanın motor: "+this.engine);
+		System.out.println("Arabanın kapı : "+this.doors);
 	}
 
 	public void setColor(String color) {
